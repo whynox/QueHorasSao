@@ -6,6 +6,8 @@ function carregar() {
     var hora = data.getHours()
     var minuto = data.getMinutes()
     msg.innerHTML = `Agora são ${hora} horas e ${minuto} minutos`
+    
+    setInterval(carregar, 1000);
 
     if (hora >= 6 && hora < 12) {
         // Bom dia
